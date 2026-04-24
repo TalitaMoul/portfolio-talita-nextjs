@@ -10,7 +10,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Talita.dev | Front-end Developer",
-  description: "Portfólio de Talita Moulin, Desenvolvedora Front-end especializada em React, TypeScript e Tailwind.",
+  description:
+    "Portfólio de Talita Moulin, Desenvolvedora Front-end especializada em React, TypeScript e Tailwind.",
   icons: {
     icon: "/favicon.ico",
   },

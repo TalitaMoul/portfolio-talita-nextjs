@@ -56,8 +56,8 @@ export function Projects() {
           title="Portfólio v2 — Next.js"
           description="Migração e evolução do portfólio para Next.js com App Router, Server Components e otimização automática de imagens. Inclui galeria de pets com lightbox, menu responsivo e fonte via next/font."
           technologies={["React", "TypeScript", "Tailwind", "Next.js"]}
-          demoUrl="#"
-          repoUrl="#"
+          demoUrl="https://potfolio-talita-nextjs.vercel.app/"
+          repoUrl="https://github.com/TalitaMoul/portfolio-talita-nextjs"
         />
       </div>
     </section>
