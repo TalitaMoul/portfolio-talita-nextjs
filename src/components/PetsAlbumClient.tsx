@@ -57,7 +57,7 @@ export function PetsAlbumClient({ photos }: PetsAlbumClientProps) {
   };
 
   return (
-    <main className="relative max-w-7xl mx-auto px-6 py-12 lg:py-24 min-h-screen bg-[#FFFAF5]/50">
+    <main className="relative max-w-7xl mx-auto px-6 py-12 lg:py-24 min-h-screen animate-fade-in-up bg-[#FFFAF5]/50">
       <Link
         href="/"
         className="inline-flex items-center text-gray-500 hover:text-orange-500 font-medium mb-12 transition-colors group"
@@ -80,7 +80,9 @@ export function PetsAlbumClient({ photos }: PetsAlbumClientProps) {
       </div>
 
       {photos.length === 0 ? (
-        <p className="text-gray-500 text-lg">Nenhuma foto encontrada em <code>public/pets/</code>.</p>
+        <p className="text-gray-500 text-lg">
+          Nenhuma foto encontrada em <code>public/pets/</code>.
+        </p>
       ) : (
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
           {photos.map((photo, index) => (
@@ -105,12 +107,12 @@ export function PetsAlbumClient({ photos }: PetsAlbumClientProps) {
 
       {currentIndex !== null && (
         <div
-          className="fixed inset-0 bg-black/90 z-[100] flex items-center justify-center p-4 backdrop-blur-sm"
+          className="fixed inset-0 bg-black/90 z-[100] flex items-center justify-center p-4 backdrop-blur-sm animate-fade-in"
           onClick={() => setCurrentIndex(null)}
         >
           <button
             onClick={() => setCurrentIndex(null)}
-            className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors bg-white/10 p-2 rounded-full backdrop-blur-sm z-[110]"
+            className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors bg-white/10 p-2 rounded-full backdrop-blur-sm z-[110] cursor-pointer"
             aria-label="Fechar foto"
           >
             <X size={28} />
@@ -121,7 +123,7 @@ export function PetsAlbumClient({ photos }: PetsAlbumClientProps) {
               e.stopPropagation();
               goToPrev();
             }}
-            className="absolute left-4 md:left-8 text-white hover:text-orange-500 transition-colors bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-sm z-[110]"
+            className="absolute left-4 md:left-8 text-white hover:text-orange-500 transition-colors bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-sm z-[110] cursor-pointer"
             aria-label="Foto anterior"
           >
             <ChevronLeft size={32} />
@@ -138,7 +140,7 @@ export function PetsAlbumClient({ photos }: PetsAlbumClientProps) {
               height={900}
               sizes="90vw"
               style={{ width: "auto", height: "auto", maxHeight: "85vh" }}
-              className="rounded-xl shadow-2xl object-contain select-none"
+              className="rounded-xl shadow-2xl object-contain animate-zoom-in select-none"
             />
             <div className="absolute -bottom-10 text-white/70 text-sm font-medium">
               {currentIndex + 1} / {photos.length}
@@ -150,7 +152,7 @@ export function PetsAlbumClient({ photos }: PetsAlbumClientProps) {
               e.stopPropagation();
               goToNext();
             }}
-            className="absolute right-4 md:right-8 text-white hover:text-orange-500 transition-colors bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-sm z-[110]"
+            className="absolute right-4 md:right-8 text-white hover:text-orange-500 transition-colors bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-sm z-[110] cursor-pointer"
             aria-label="Próxima foto"
           >
             <ChevronRight size={32} />
