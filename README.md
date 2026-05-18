@@ -1,5 +1,5 @@
 # Portfólio Pessoal — Talita Moulin 
-Portfólio profissional desenvolvido com Next.js e TypeScript, criado para centralizar minha identidade como Desenvolvedora Front-End e apresentar meus projetos.
+Portfólio profissional desenvolvido com **Next.js** e **TypeScript**, criado para centralizar minha identidade como Desenvolvedora Front-End e apresentar meus projetos.
 🔗 Repositório
 
 ## Sobre o projeto
@@ -29,5 +29,5 @@ bash# Clone o repositório
 Acesse *http://localhost:3000* no navegador.
 
 ## Autor
-**Desenvolvido por Talita Moulin**
+**Desenvolvido por Talita Moulin**<br>
 LinkedIn · GitHub
